@@ -1,0 +1,14 @@
+:root {
+  /* Brand */
+  --color-primary: #33bffb;
+  --color-secondary: #1a1a1a;
+
+  /* Backgrounds */
+  --color-background: #161616;
+  --color-surface: #252525;
+
+  /* Text */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #818181;
+  --color-text-accent: #33bffb;
+}
