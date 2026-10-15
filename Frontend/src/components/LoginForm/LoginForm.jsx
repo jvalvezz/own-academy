@@ -45,10 +45,14 @@ function LoginForm() {
                 label="Lembrar de mim"
                 sx={{
                     color: 'var(--color-text-secondary)',
-                    fontSize: '5px',
+                    '& .MuiFormControlLabel-label': {
+                        fontSize: '12px',
+                    },
                 }}
                 />
+            </div>
 
+            <div className="login-form__action">
                 <Button type="submit">
                     Entrar
                 </Button>
