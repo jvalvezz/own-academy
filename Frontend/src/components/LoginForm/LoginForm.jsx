@@ -3,10 +3,18 @@ import Button from '../Button/Button'
 import './LoginForm.css'
 import Checkbox from '@mui/material/Checkbox'
 import FormControlLabel from '@mui/material/FormControlLabel'
+import { useNavigate } from 'react-router-dom'
 
 function LoginForm() {
+    const navigate = useNavigate()
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        navigate('/home')
+    }
+
     return (
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleSubmit}>
             <div className="login-form__tabs">
                 <button type="button">Login</button>
                 <button type="button">Cadastrar-se</button>

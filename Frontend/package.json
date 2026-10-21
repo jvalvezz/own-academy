@@ -13,7 +13,8 @@
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^9.5.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.0.2",
