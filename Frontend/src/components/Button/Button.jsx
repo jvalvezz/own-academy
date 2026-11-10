@@ -5,6 +5,7 @@ function Button({
     type = 'button',
     disabled = false,
     onClick,
+    fullWidth = true,
     sx = {},
 }) {
     return (
@@ -13,7 +14,7 @@ function Button({
             disabled={disabled}
             onClick={onClick}
             variant="contained"
-            fullWidth
+            fullWidth={fullWidth}
             sx={{
                 minHeight: 22,
                 borderRadius: '4px',

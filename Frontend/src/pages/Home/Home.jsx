@@ -1,7 +1,16 @@
+import Button from '../../components/Button/Button'
+import './Home.css'
+
 function Home() {
   return (
-    <main>
-      <h1>Home da Own Academy</h1>
+    <main className="home-page">
+      <div className="home-page__header">
+        <h1>Home</h1>
+
+        <Button fullWidth={false}>
+          Curso +
+        </Button>
+      </div>
     </main>
   )
 }

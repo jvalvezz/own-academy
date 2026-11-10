@@ -25,7 +25,7 @@
   cursor: pointer;
 }
 
-.login-form__tabs button:first-child {
+.login-form__tabs button.login-form__tab--active {
   color: var(--color-primary);
   border-bottom: 2px solid var(--color-primary);
 }
@@ -64,4 +64,11 @@
   width: 100%;
   margin-top: auto;
   padding: 0 30px 30px;
+}
+
+.login-form__error {
+  margin: 0;
+  color: #ff8b8b;
+  font-size: 13px;
+  line-height: 1.4;
 }

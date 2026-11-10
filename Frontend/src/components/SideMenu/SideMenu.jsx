@@ -1,6 +1,15 @@
 import './SideMenu.css'
+import { useNavigate } from 'react-router-dom'
+import { removeAccessToken } from '../../services/auth'
 
 function SideMenu() {
+    const navigate = useNavigate()
+
+    function handleLogout() {
+        removeAccessToken()
+        navigate('/login', { replace: true })
+    }
+
     return (
         <aside>
             <div className="side-menu__logo">
@@ -36,7 +45,7 @@ function SideMenu() {
 
                 <div className='side-menu__footer'>
                     <a href="/perfil">Meu perfil</a>
-                    <button type="button">Sair</button>
+                    <button type="button" onClick={handleLogout} >Sair</button>
                 </div>
             </nav>
         </aside>
